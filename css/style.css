@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --v-dark-gray: hsl(0, 0%, 17%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* Utility classes */
+
+.flex{
+    display: flex;
+}
+
+.centre{
+    justify-content: center;
+    align-items: center;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+/* Upper */
+
+.upper{
+    width: 100%;
+    height: 35%;
+    background-image: url('../images/pattern-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+}
+
+.upper__container{
+    margin-top: -5rem;
+}
+
+.upper__container h1{
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search__text{
+    width: 450px;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 1.5rem;
+}
+
+.search__text::placeholder{
+    font-size: 1rem;
+    color: var(--dark-gray);
+}
+
+.search__logo{
+    width: 60px;
+    height: 60px;
+    background: #000;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.search__logo:hover{
+    background-color: hsl(0deg 0% 24.71%);
+}
+
+.details{
+    padding: 2rem;
+    border-radius: 15px;
+    background: #fff;
+    margin-top: 2rem;
+    transform: translateX(-24%);
+    z-index: 999;
+}
+
+.details__container > div{
+    width: 200px;
+    margin: 0 1rem;
+}
+
+.details__container > div h4{
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.details__container > div span{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.ipAddr, .location, .timeZone{
+    border-right: 1px solid var(--v-dark-gray);
+}
+
+.map{
+    width: 100%;
+    height: 65%;
+    background: grey;
+}
+
+@media screen and (max-width: 1084px){
+    .details__container > div h4{
+        font-size: 0.8rem;
+    }
+
+    .details__container > div span{
+        font-size: 1rem;
+    }
+    .details__container > div{
+        width: 150px;
+    }
+
+    .details{
+        transform: translateX(-18%);
+    }
+
+    .search__text{
+        width: 430px;
+        height: 50px;
+    }
+
+    .search__logo{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .details__container > div h4{
+        font-size: 0.75rem;
+    }
+
+    .details__container > div span{
+        font-size: 0.95rem;
+    }
+    .details__container > div{
+        width: 130px;
+    }
+
+    .details{
+        transform: translateX(-15%);
+    }
+
+    .upper__container h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .details__container > div h4{
+        font-size: 0.7rem;
+    }
+
+    .details__container > div span{
+        font-size: 0.9rem;
+    }
+    .details__container > div{
+        width: 120px;
+    }
+
+    .details{
+        transform: translateX(-14%);
+    }
+}
+
+@media screen and (max-width: 720px){
+    .details__container > div h4{
+        font-size: 0.6rem;
+    }
+
+    .details__container > div span{
+        font-size: 0.8rem;
+    }
+    .details__container > div{
+        width: 100px;
+    }
+
+    .details{
+        transform: translateX(-12%);
+    }
+
+    .search__text{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .details__container{
+        display: block;
+    }
+
+    .details{
+        padding: 0;
+        transform: translateX(13%);
+    }
+
+    .details__container > div{
+        width: 300px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .ipAddr, .location, .timeZone{
+        border-right: none;
+    }
+
+    .details__container > div h4{
+        font-size: 0.7rem;
+    }
+
+    .details__container > div span{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .search__text{
+        width: 300px;
+    }
+
+    .details{
+        transform: translate(2%);
+    }
+}
