@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontendmentor Solution](https://your-solution-url.com](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0/hub?share=true))
 - Live Site URL: [IP Address Tracker](https://your-live-site-url.com](https://c4tt0.github.io/IP-Address-Tracker/))
 
 ## My process
